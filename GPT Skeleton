@@ -1,0 +1,131 @@
+Goal: Demonstrate the dangers of poor cybersecurity through a honeypot deployment, show how to collect/analyze attack logs, and present mitigations.
+
+1. Project Objectives
+
+Explain what a honeypot is and why attackers target weak systems.
+
+Demonstrate attack attempts in a controlled environment.
+
+Analyze captured logs for patterns and insights.
+
+Present concrete defense recommendations.
+
+2. System Architecture
+
+Victim Environment: Simulated vulnerable system (isolated VM or container).
+
+Honeypot: Low/medium-interaction honeypot emulating common services (SSH/web).
+
+Log Collection: Centralized log aggregation (ELK, Graylog, or simple CSVs).
+
+Analysis/Visualization: Charts showing attack trends, top IPs, usernames, and commands.
+
+Mitigation: Show improved security (patching, firewalls, MFA, segmentation).
+
+3. Team Roles (3 Members)
+
+Member A – Deployment: Build and configure honeypot(s), manage isolation.
+
+Member B – Analysis: Aggregate logs, create visuals, summarize data.
+
+Member C – Presentation: Explain background, findings, and mitigations.
+
+4. Deliverables
+
+7–10 minute presentation with slides.
+
+Short demo or recorded attack clip (30–90 seconds).
+
+One-page findings + mitigation summary.
+
+Optional sanitized logs.
+
+5. Slide Outline (Example 9-Min Plan)
+
+Title & Team (20s)
+
+Problem & Motivation (45s) – Why honeypots matter.
+
+Architecture Diagram (45s) – Safe lab setup.
+
+Demo (90s) – Short honeypot clip.
+
+Log Analysis (90s) – Show data + insights.
+
+What Went Wrong (45s) – Exposed vulnerabilities.
+
+Mitigations (60s) – Security best practices.
+
+Lessons Learned (40s) – Key takeaways.
+
+Wrap-Up & Q&A (25s)
+
+6. Demo Safety
+
+Run only in an isolated lab (no public exposure).
+
+Use low-interaction honeypots only.
+
+Record demo to avoid live unpredictability.
+
+Anonymize logs (replace IPs/usernames).
+
+Never execute captured malware.
+
+7. Data to Collect & Analyze
+
+Connection metadata: timestamp, source IP/port, destination port.
+
+Authentication attempts: usernames/passwords tried.
+
+Commands entered (if recorded).
+
+Frequency/time trends, top IPs, and port usage.
+
+Visualization ideas: bar chart (usernames), line chart (attack timeline), table (top IPs), pie chart (ports).
+
+8. Tools
+
+Data: CSV/JSON or ELK/Graylog.
+
+Visualization: Excel, Python (pandas + matplotlib), or Kibana.
+
+Presentation: PowerPoint, Google Slides, or Canva.
+
+9. Mitigations to Present
+
+Remove default credentials.
+
+Enforce strong passwords and MFA.
+
+Apply regular patches and minimize exposed ports.
+
+Use fail2ban/firewall rules for brute-force protection.
+
+Segment networks and centralize logging.
+
+Conduct regular security audits.
+
+10. Ethics & Safety
+
+Never expose live honeypots to the public internet without approval.
+
+Keep all activity within institutional or lab environments.
+
+Sanitize all logs and avoid sharing raw IPs or credentials.
+
+Follow course/institution cybersecurity policies.
+
+11. Grading Breakdown (Suggested)
+
+Objective clarity – 10%
+
+Safe architecture – 20%
+
+Demo quality – 25%
+
+Analysis/visuals – 20%
+
+Mitigation insight – 15%
+
+Presentation teamwork – 10%
